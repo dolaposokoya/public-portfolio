@@ -75,19 +75,29 @@ body {
     color: var(--white-smoke);
 }
 
-.developer-image{
+.developer-image {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.active-page{
+.active-page {
     color: var(--theme-green) !important;
 }
 
-.c-logo{
+.c-logo {
     margin-top: 5em;
     width: 20em;
+}
+
+.about {
+    font-family: var(--Poppins);
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
 }
 
 .about {
@@ -161,9 +171,11 @@ body {
     border-radius: .12em;
     cursor: pointer;
 }
+
 .services {
     grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
 }
+
 .developement {
     background-color: var(--theme-black);
     box-shadow: 0 1.6rem 2.4rem rgb(0 0 0 / 50%);
@@ -203,6 +215,7 @@ body {
     color: var(--white-smoke);
     font-weight: 700;
 }
+
 .developement h4 {
     font-family: var(--Montserrat);
     margin-top: .4em;
@@ -213,6 +226,83 @@ body {
     font-weight: 400;
     color: var(--white-smoke);
 }
+
+.services-portfolio {
+    grid-template-columns: repeat(auto-fit, minmax(19em, 1fr));
+    margin: 1em 0em;
+}
+
+
+#porfolio .who {
+    width: 6em;
+}
+
+.portfolios {
+    margin: 1.2em 1.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    flex-direction: column;
+    width: 100%;
+    transition: all 2s;
+}
+
+.portfolio {
+    position: relative;
+    width: 100%;
+    height: auto;
+    transition: all 2s;
+}
+
+.portfolio img {
+    width: 100%;
+    border-radius: .5em;
+}
+
+.color-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(61, 66, 66, 0.7);
+    border-radius: .5em;
+    width: 100%;
+
+}
+
+.overlays {
+    display: none;
+}
+
+.overlays a {
+    padding: .5em 3em;
+    background-color: var(--theme-green);
+    border: none;
+    border-radius: .12em;
+    cursor: pointer;
+    color: var(--white-smoke);
+    font-family: var(--Montserrat);
+    margin: .8em 0em;
+    transition: all 2s;
+    z-index: 99999;
+}
+
+.color-overlay:hover+.overlays {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5em;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(61, 66, 66);
+    border-radius: .5em;
+    z-index: 9999;
+}
+
 
 @media screen and (min-width: 900px) {
     .container {
