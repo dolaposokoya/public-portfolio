@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    /* overflow-x: hidden; */
+}
+
+:root {
+    --font: 'Jura', sans-serif;
+    --Montserrat: 'Montserrat', sans-serif;
+    --Poppins: 'Poppins', sans-serif;
+    --weather: 'Merriweather Sans', sans-serif;
+    --Bio: 'BioRhyme', serif;
+    --white: #ffffff;
+    --white-smoke: whitesmoke;
+    --theme-blue: #065473;
+    --theme-green: #70c385;
+    --theme-danger: #dc3545;
+    --theme-purple: rgb(64, 42, 63);
+    --theme-black: #212623;
+}

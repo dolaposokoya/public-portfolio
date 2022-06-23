@@ -3,60 +3,128 @@
 
 <head>
     <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="icon" href="./favicon.ico" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./root.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Merriweather+Sans:wght@500&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@300;400;700&family=Jura:wght@700&family=Merriweather+Sans:wght@500&display=swap"
         rel="stylesheet">
+    <!-- <link rel="manifest" href="https://www.kemiadeleke.com/"> -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Freelance web developer and mobile application developer (react native developer)" />
-    <title>Adedolapo Sokoya | Software Developer | Mobile App Developer | Back-end Developer</title>
+        content="Freelance web developer and mobile application developer (react native developer) web API developer" />
+    <title>Adedolapo Sokoya | Software Developer | Web API Developer </title>
 </head>
 
 <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div class="container">
+    <div class="center">
         <div class="header">
-            <img class="logo" src="./assets/logo.png" alt="company logo">
-            <div class="harm">
-                <div class="menu"></div>
-                <div class="menu"></div>
-                <div class="menu"></div>
-            </div>
-        </div>
-        <div class="container-flex">
-            <div class="info-view">
-                <h3 class="profile">WEB DEVELOPER, MOBILE APP DEVELOPER & BACK-END DEVELOPER</h3>
-                <h3 class="name">I'm Adedolapo Sokoya. A</h3>
-            </div>
-            <div class="picture">
-                <img src="./assets/profile.jpg" alt="company owner">
-            </div>
-            <div class="btn-view">
-                <button class="read">Read More <span class="forward-arrow">&#x2192</span></button>
-                <button class="hire">Hire Me <span class="forward-arrow">&#x2192</span></button>
-            </div>
-        </div>
-        <div class="contact">
-            <div class="text">
-                <p class="contact-text">Contact</p>
-            </div>
-            <div class="front">
-                <img src="./assets/frontside.jpg" alt="business card">
-            </div>
-            <div class="back">
-                <img src="./assets/backside.jpg" alt="business card">
-            </div>
-        </div>
-        <div class="project">
-            <div class="text">
-                <p class="contact-text">Projects</p>
+            <a class="logoContainer" page="home" class='current-page' href="./">
+                <img src="./assets/whitelogo.png" class="logo" />
+            </a>
+            <nav class="menu-container">
+                <ul>
+                    <li>
+                        <a page="home" class='current-page active-page' href="./">Home</a>
+                    </li>
+                    <li>
+                        <a page="trainings" class='current-page' href="./views/trainings">About Me</a>
+                    </li>
+                    <li>
+                        <a page="register" class='current-page' href="./views/register">Contact Me</a>
+                    </li>
+                    <li>
+                        <a page="about" class='current-page' href="./views/about">Hire Me</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="navContainer">
+                <div class="harmburger"></div>
+                <div class="harmburger1"></div>
+                <div class="harmburger2"></div>
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="profile introduction">
+            <div class="details introduction1">
+                <p class="intro">HI THERE👋I'M</p>
+                <p class="name">Dolapo Sokoya</p>
+                <p class="main-info">Software Developer</p>
+                <p class="main-info profession">I'm a professional Software Developer 👩‍💻 with front end and back end
+                    development skills based in Lagos, Nigeria.</p>
+                <div class="hire">
+                    <button class="hireme">Hire Me</button>
+                </div>
+            </div>
+            <div class="developer-image">
+                <img src="./assets/pagelogo.png" alt="owner profile" class="c-logo" />
+            </div>
+        </div>
+        <div class="profile introduction">
+            <div class="details">
+                <img src="./assets/info.png" alt="owner profile" class="profile-image" />
+            </div>
+            <div class="details">
+                <div class="newline">
+                    <p class="name who">Who I am</p>
+                    <div class="line1"></div>
+                </div>
+                <p class="name about">About Me</p>
+                <p class="main-info professional">I’m Adedolapo Sokoya, a professional and talented Sofware Developer
+                    with
+                    front end development, API developement and back end skills. I am passionate about leveraging my
+                    diverse backgrounds to decipher challenging problems and create delightful software</p>
+                <div class="line"></div>
+                <p class="main-info professional">I have top skills in using HTML, CSS, PHP and JavaScript to design
+                    useful website, Node.Js for building API's and mobile application using React Native</p>
+                <div class="line"></div>
+                <p class="main-info professional">Being a diligent, hardworking and result oriented guy, I always work
+                    towards achieving best result on each project I lay my hands on.</p>
+            </div>
+        </div>
+        <div class="profile introduction">
+            <div class="details">
+                <div class="newline">
+                    <p class="name who">What I Do</p>
+                    <div class="line1"></div>
+                </div>
+                <div class="services">
+                    <div class="developement">
+                        <div class="image">
+                            <img src="./assets/brackets.png" class="icon" alt="developement icon" />
+                        </div>
+                        <p class="website">Website</p>
+                        <h4>I work with certain design tools to create high-fidelity designs and prototypes. I design
+                            accessible and usable products which aid business growth.</h4>
+                    </div>
+                    <div class="developement">
+                        <div class="image">
+                            <img src="./assets/api.png" class="icon" alt="developement icon" />
+                        </div>
+                        <p class="api">API</p>
+                        <h4>I work with certain design tools to create high-fidelity designs and prototypes. I design
+                            accessible and usable products which aid business growth.</h4>
+                    </div>
+                    <div class="developement">
+                        <div class="image">
+                            <img src="./assets/app-development.png" class="icon" alt="developement icon" />
+                        </div>
+                        <p class="mobile-app">Mobile Application</p>
+                        <h4>I work with certain design tools to create high-fidelity designs and prototypes. I design
+                            accessible and usable products which aid business growth.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
