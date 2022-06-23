@@ -134,7 +134,6 @@ body {
     letter-spacing: 1px;
     font-size: 1em;
     margin: 0em;
-    width: 5.8em;
     color: var(--theme-green);
     text-transform: capitalize;
 }
@@ -293,6 +292,22 @@ body {
     margin-top: .5em;
     transform: scale(.9);
     background-color: var(--theme-blue);
+}
+
+.address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.address a{
+    padding: .2em 0em;
+    text-align: center;
+    cursor: pointer;
+    color: var(--white-smoke);
+    font-family: var(--Montserrat);
+    transition: all 2s;
+    z-index: 99999;
 }
 
 
