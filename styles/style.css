@@ -228,7 +228,7 @@ body {
 }
 
 .services-portfolio {
-    grid-template-columns: repeat(auto-fit, minmax(19em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(23em, 1fr));
     margin: 1em 0em;
 }
 
@@ -238,22 +238,19 @@ body {
 }
 
 .portfolios {
-    margin: 1.2em 1.8em;
+    margin: 1.2em .8em;
     display: flex;
     justify-content: center;
     align-items: center;
     justify-self: center;
     align-self: center;
     flex-direction: column;
-    width: 100%;
-    transition: all 2s;
 }
 
 .portfolio {
     position: relative;
     width: 100%;
     height: auto;
-    transition: all 2s;
 }
 
 .portfolio img {
@@ -272,7 +269,12 @@ body {
 }
 
 .overlays {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5em;
+    border-radius: .5em;
+    z-index: 9999;
 }
 
 .overlays a {
@@ -286,21 +288,6 @@ body {
     margin: .8em 0em;
     transition: all 2s;
     z-index: 99999;
-}
-
-.color-overlay:hover+.overlays {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: .5em;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgb(61, 66, 66);
-    border-radius: .5em;
-    z-index: 9999;
 }
 
 
