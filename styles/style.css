@@ -75,6 +75,21 @@ body {
     color: var(--white-smoke);
 }
 
+.developer-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active-page{
+    color: var(--theme-green) !important;
+}
+
+.c-logo{
+    margin-top: 5em;
+    width: 20em;
+}
+
 .about {
     font-family: var(--Poppins);
     font-weight: 500;

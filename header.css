@@ -15,12 +15,6 @@
     padding: .5em 0em;
 }
 
-.c-logo {
-    margin-top: 1em;
-    width: 90%;
-}
-
-
 .navContainer {
     display: flex;
     display: none;
