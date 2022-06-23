@@ -9,6 +9,10 @@
     /* overflow-x: hidden; */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --font: 'Jura', sans-serif;
     --Montserrat: 'Montserrat', sans-serif;
