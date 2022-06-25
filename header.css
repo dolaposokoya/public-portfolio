@@ -17,13 +17,11 @@
 
 .navContainer {
     display: flex;
-    display: none;
+    /* display: none; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-right: .5em;
-    width: 42px;
-    height: 42px;
     background-color: transparent;
 }
 
@@ -66,12 +64,12 @@
 }
 
 .harmburger, .harmburger1, .harmburger2 {
-    width: 25px;
-    border-radius: 14px;
-    height: 4.5px;
-    margin: 1px;
+    width: 2.5em;
+    border-radius: .2em;
+    height: .4em;
+    margin: .1em;
     transition: all 1s;
-    background-color: var(--theme-blue);
+    background-color: var(--theme-green);
 }
 
 .harmburger1 {
@@ -141,7 +139,7 @@
     height: 4px;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
     .navContainer {
         display: none;
     }
