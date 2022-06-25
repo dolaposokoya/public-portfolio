@@ -3,18 +3,6 @@ body {
     color: var(--white-smoke);
 }
 
-.banner-image {
-    width: 100%;
-    position: relative;
-    width: 100%;
-}
-
-.banner {
-    width: 100%;
-    height: 60vh;
-    object-fit: cover;
-}
-
 .text-align {
     position: absolute;
     top: 0;
@@ -352,29 +340,7 @@ body {
     z-index: 99999;
 }
 
-
-@media screen and (min-width: 734px) {
-    .text-align {
-        justify-content: center;
-    }
-    .text-align h3 {
-        margin: 0em;
-        font-size: 2.2em;
-    }
-}
 @media screen and (min-width: 900px) {
-    .banner {
-        height: 80vh;
-        width: 100vw;
-        object-fit: cover;
-    }
-    .text-align h3 {
-        font-size: 3em;
-    }
-    .text-align span {
-        font-size: 2em;
-    }
-
     .container {
         display: flex;
         justify-content: center;
