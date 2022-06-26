@@ -9,6 +9,7 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
 .text-align {
     position: absolute;
     top: 0;
@@ -32,6 +33,7 @@ body {
     -webkit-text-stroke-color: var(--white-smoke);
     -webkit-text-stroke-width: .2mm;
 }
+
 .text-align span {
     text-align: center;
     font-family: var(--Poppins);
@@ -39,7 +41,7 @@ body {
     -webkit-text-stroke-width: .1mm;
 }
 
-.tech{
+.tech {
     color: var(--theme-green);
 }
 
@@ -60,7 +62,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    justify-self: center;
+    /* justify-self: center; */
     width: 90%;
     padding: 1em .5em;
     margin-top: 1em;
@@ -140,15 +142,11 @@ body {
     text-transform: capitalize;
     width: 100%;
 }
-
-.about {
-    font-family: var(--Poppins);
-    font-weight: 500;
-    letter-spacing: 1px;
-    font-size: 1.5em;
-    text-align: center;
-    text-transform: capitalize;
-    width: 100%;
+#about, #services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .professional {
@@ -161,23 +159,6 @@ body {
     text-align: center;
 }
 
-/* .newline {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 1em;
-}
-
-.newline .who {
-    font-family: var(--Poppins);
-    font-weight: 500;
-    letter-spacing: 1px;
-    font-size: 1em;
-    margin: 0em;
-    color: var(--theme-green);
-    text-transform: capitalize;
-} */
 
 .line {
     width: 100%;
@@ -262,13 +243,12 @@ body {
 }
 
 .services-portfolio {
-    grid-template-columns: repeat(auto-fit, minmax(23em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
     margin: 1em 0em;
 }
 
-
-#porfolio .who {
-    width: 6em;
+#porfolio {
+    width: 100%;
 }
 
 .portfolios {
@@ -276,20 +256,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-self: center;
-    align-self: center;
+    justify-items: center;
     flex-direction: column;
+    width: 90%;
 }
 
 .portfolio {
-    position: relative;
     width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
     transition: all 2s;
 }
 
 .portfolio img {
-    width: 100%;
+    width: 90%;
     border-radius: .5em;
 }
 
