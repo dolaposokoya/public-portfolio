@@ -1,0 +1,70 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hireus-form, .clients {
+    background-color: var(--theme-blue);
+    box-shadow: 0 .6rem 2.4rem rgb(0 0 0 / 30%);
+    border-radius: .2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    padding: 1em 0em;
+}
+
+.clients {
+    background-color: transparent;
+    box-shadow: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+}
+
+.clients img {
+    width: 10em;
+    margin: .7em .3em;
+}
+
+.hireus-form input, .hireus-form textarea {
+    margin: .4em 0em;
+    border: none;
+    padding: 1em 0em;
+    padding-left: .5em;
+    width: 90%;
+    font-family: var(--Poppins);
+    color: var(--theme-blue);
+    font-weight: 400;
+    font-size: 1.05em;
+}
+
+.hireus-form button {
+    margin: .4em 0em;
+    border: none;
+    padding: 1em 0em;
+    width: 90%;
+    color: var(--theme-blue);
+    font-family: var(--Poppins);
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 2s;
+}
+
+.hireus-form button:hover {
+    transform: scale(.9);
+}
+
+@media screen and (min-width: 600px) {
+    .hireus-form {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .hireus-form {
+        width: 600px;
+    }
+}

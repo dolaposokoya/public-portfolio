@@ -3,12 +3,17 @@ body {
     color: var(--white-smoke);
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .text-align {
     position: absolute;
     top: 0;
     bottom: 0;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     left: 0;
@@ -42,6 +47,7 @@ body {
     margin: 1em 0em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    width: 97%;
 }
 
 
@@ -54,7 +60,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 97%;
+    justify-self: center;
+    width: 90%;
     padding: 1em .5em;
     margin-top: 1em;
 }
@@ -154,7 +161,7 @@ body {
     text-align: center;
 }
 
-.newline {
+/* .newline {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,13 +177,7 @@ body {
     margin: 0em;
     color: var(--theme-green);
     text-transform: capitalize;
-}
-
-.line1 {
-    width: 5em;
-    height: .15em;
-    background-color: var(--theme-green);
-}
+} */
 
 .line {
     width: 100%;

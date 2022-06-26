@@ -17,12 +17,12 @@
 
 .navContainer {
     display: flex;
-    /* display: none; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-right: .5em;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .active-nav {
@@ -53,8 +53,8 @@
     align-content: center;
     height: 100%;
     width: 100%;
-    top: 60px;
-    background-color: rgba(216, 217, 218, 0.9);
+    top: 90px;
+    background-color: var(--theme-black);
     transform: translateY(-120%);
     transition: transform 0.3s;
 }

@@ -7,6 +7,7 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="icon" href="./favicon.ico" />
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/hireus.css">
     <link rel="stylesheet" href="./header.css">
     <link rel="stylesheet" href="./root.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,9 +46,6 @@
                     <li>
                         <a page="register" class='current-page' href="#contactme">Contact Me</a>
                     </li>
-                    <li>
-                        <a page="about" class='current-page' href="#hireme">Hire Me</a>
-                    </li>
                 </ul>
             </nav>
             <div class="navContainer">
@@ -66,7 +64,7 @@
                 <p class="main-info profession">I'm a professional Software Developer 👩‍💻 with front end and back end
                     development skills based in Lagos, Nigeria.</p>
                 <div class="hire">
-                    <button class="hireme">Hire Me</button>
+                    <a href="#contactme"><button class="hireme">Contact Me</button></a>
                 </div>
             </div>
             <div class="developer-image">
@@ -78,9 +76,6 @@
                 <img src="./assets/info.png" alt="owner profile" class="profile-image" />
             </div>
             <div class="details">
-                <div class="newline">
-                    <p class="name who">Who I am</p>
-                </div>
                 <p class="name about">About Me</p>
                 <p class="main-info professional">I’m Adedolapo Sokoya, a professional and talented Sofware Developer
                     with
@@ -96,9 +91,6 @@
         </div>
         <div class="profile introduction" id="services">
             <div class="details">
-                <div class="newline">
-                    <p class="name who">What I Do</p>
-                </div>
                 <p class="name about">My Services</p>
                 <div class="services">
                     <div class="developement">
@@ -130,10 +122,6 @@
         </div>
         <div class="profile introduction" id="porfolio">
             <div class="details">
-                <div class="newline">
-                    <p class="name who">My Project</p>
-                    <div class="line1"></div>
-                </div>
                 <p class="name about">My Portfolio</p>
                 <div class="services services-portfolio">
                     <div class="portfolios">
@@ -164,7 +152,7 @@
                 </div>
             </div>
         </div>
-        <div class="profile introduction" id="contactme">
+        <!-- <div class="profile introduction" id="contactme">
             <div class="details">
                 <div class="newline">
                     <p class="name who" style="text-align: center;">Contact Me</p>
@@ -179,6 +167,21 @@
                             <a href="mailto:dolaposokoya97@gmail.com">🗺 No 18 Olabisi Street, Off Ogudu Road, Ojota, Lagos, Nigeria.</a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="profile introduction" id="contactme">
+            <div class="center">
+                <div class="details">
+                    <p class="name about" style="margin-bottom: 1em;">Contact Me</p>
+                    <form class="hireus-form" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                        data-aos-offset="300">
+                        <input name="name" placeholder="Full Name" id="full_name" type="text" required />
+                        <input name="email" placeholder="Email" id="email" type="email" required />
+                        <input name="subject" placeholder="Subject" id="subject" type="text" required />
+                        <textarea name="message" rows="5" placeholder="Message" type="text" required></textarea>
+                        <button class="sendMail">Send Message</button>
+                    </form>
                 </div>
             </div>
         </div>
