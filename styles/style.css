@@ -49,7 +49,7 @@ body {
     margin: 1em 0em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-    width: 97%;
+    /* width: 97%; */
 }
 
 
@@ -62,7 +62,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* justify-self: center; */
+    justify-self: center;
     width: 90%;
     padding: 1em .5em;
     margin-top: 1em;
@@ -77,11 +77,7 @@ body {
 }
 
 .details .profile-image {
-    width: 90%;
-    background-color: rgb(64, 42, 63);
-    justify-self: center;
-    align-self: center;
-    display: flex;
+    width: 20em;
 }
 
 .intro {
@@ -142,12 +138,21 @@ body {
     text-transform: capitalize;
     width: 100%;
 }
-#about, #services{
+
+#services {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
+/* #about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: aqua;
+} */
 
 .professional {
     font-family: var(--Montserrat);
@@ -249,16 +254,18 @@ body {
 
 #porfolio {
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .portfolios {
-    margin: 1.2em .8em;
+    margin: 1.2em 0em;
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-items: center;
     flex-direction: column;
-    width: 90%;
+    justify-self: center;
+    /* width: 90%; */
 }
 
 .portfolio {
@@ -267,7 +274,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-items: center;
     transition: all 2s;
 }
 
@@ -324,6 +330,8 @@ body {
     z-index: 99999;
 }
 
+
+
 @media screen and (min-width: 900px) {
     .container {
         display: flex;
@@ -331,8 +339,7 @@ body {
         align-items: center;
         flex-direction: column;
     }
-
     .profile {
-        width: 70vw;
+        width: 80vw;
     }
 }
