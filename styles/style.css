@@ -77,7 +77,8 @@ body {
 }
 
 .details .profile-image {
-    width: 20em;
+    width: 18.75em;
+    height: 18.75em;
 }
 
 .intro {
@@ -127,6 +128,7 @@ body {
 .c-logo {
     margin-top: 5em;
     width: 20em;
+    height: 20em;
 }
 
 .about {
