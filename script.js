@@ -7,3 +7,12 @@ $(document).ready(async () => {
         $(".menu-container").toggleClass("active");
     })
 })
+$(document).ready(async () => {
+    $('.current-page').on('click', () => {
+        $(".navContainer").removeClass("active-nav");
+        console.log('CLicker')
+    })
+})
+
+
+AOS.init();
