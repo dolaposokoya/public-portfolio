@@ -8,11 +8,11 @@ $(document).ready(async () => {
     })
 })
 $(document).ready(async () => {
-    $('.current-page').on('click', () => {
-        $(".navContainer").removeClass("active-nav");
+    $(".current-page").click(function () {
+        // const getClass = this;
+        $(".menu-container").removeClass("active");
         console.log('CLicker')
-    })
+    });
 })
-
 
 AOS.init();

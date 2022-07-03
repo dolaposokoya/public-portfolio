@@ -173,7 +173,7 @@
                 </div>
             </div>
         </div> -->
-        <div class="profile introduction" id="contactme" data-aos="fade-up" data-aos-duration="1500">
+        <div class="profile introduction" id="contactme" data-aos="zoom-in-down">
             <div class="center1">
                 <div class="details">
                     <p class="name about" style="margin-bottom: 1em;">Contact Me</p>
@@ -189,6 +189,18 @@
         </div>
     </div>
     <script src="./script.js"></script>
+    <script>
+        const navBar = $('.center').offset().top
+        $(window).scroll(function () {
+            if (window.pageYOffset > navBar) {
+                $('.center').addClass('sticky')
+            }
+            else {
+                console.log('remove color', navBar)
+                $('.center').removeClass('sticky')
+            }
+        });
+    </script>
 </body>
 
 </html>
