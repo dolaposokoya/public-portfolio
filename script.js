@@ -9,9 +9,11 @@ $(document).ready(async () => {
 })
 $(document).ready(async () => {
     $(".current-page").click(function () {
-        // const getClass = this;
+        $(".navContainer").removeClass("active-nav");
+        $(".harmburger").removeClass("close");
+        $(".harmburger1").removeClass("off");
+        $(".harmburger2").removeClass("close1");
         $(".menu-container").removeClass("active");
-        console.log('CLicker')
     });
 })
 
