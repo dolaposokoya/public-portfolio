@@ -15,4 +15,15 @@ $(document).ready(async () => {
     });
 })
 
+const navBar = $('.center').offset().top
+$(window).scroll(function () {
+    if (window.pageYOffset > navBar) {
+        $('.center').addClass('sticky')
+    }
+    else {
+        console.log('remove color', navBar)
+        $('.center').removeClass('sticky')
+    }
+});
+
 AOS.init();
